@@ -2,7 +2,7 @@ name: run score.py
 
 on:
   schedule:
-    - cron: "0 13 * * 1" # Run every Monday at 1pm
+    - cron: "0 23 * * *" # Run every day at 11 pm
 jobs:
   build:
     runs-on: ubuntu-latest
