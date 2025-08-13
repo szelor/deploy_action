@@ -19,7 +19,7 @@ def main():
     model = joblib.load('models/model.joblib')
 
     # Generate scores
-    scores = model.predict(scoring_data)
+    scores = model.predict(X_val)
 
     # Log scores
     logging.basicConfig(level=logging.INFO)
@@ -31,4 +31,5 @@ def main():
     logger.info(f'Scores: {scores}')
 
 if __name__ == '__main__':
+
     main()
